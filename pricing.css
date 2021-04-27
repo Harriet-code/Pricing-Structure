@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body{
+    background: url(images/bg-top.svg) right top no-repeat, url(images/bg-bottom.svg) left bottom no-repeat;
+    background-color: #f6f6fe;
+    min-height: 100vh;
+    padding: 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+    place-content: center;
+    line-height: 1.5;
+
+}
+h2{
+    text-align: center;
+    margin-top: 3rem;
+    color: hsl(233, 13%, 49%);
+    line-height: 1.5rem;
+
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+  
+.card-container {
+    background: #fff;
+    padding: 38px 30px 30px;
+    min-width: 16rem;
+    border-radius: 1rem;
+  }
+  
+  h3{
+      font-size: 1rem;
+      text-align: center;
+      line-height: 1.5;
+      color: #6d708d;
+
+  }
+
+  .price {
+    font-size: 3rem;
+    color: hsl(232, 13%, 33%);
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .description{
+   text-align: center;
+   color: hsl(233, 13%, 49%);
+   line-height: 1.5rem;
+  }
+
+  .learn-more{height: 44px;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+  border-radius: 5px;
+  margin-top: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: grid;
+  place-content: center;
+  transition: .5s;
+  text-decoration: none;
+  }
+
+  .learn-more:hover {
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+  }
+
+  .Professional{
+        background-image: linear-gradient(to bottom right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+        border-radius: 10px;
+        color: #ffffff;
+        padding-top: 58px;
+        padding-bottom: 50px;
+      }
+    .h3-1{
+        color: #fff;
+    }
+
+      .Professional .price {
+        color: #fff;
+      }
+      
+      .Professional .learn-more  {
+        background: #fff;
+        color: hsl(237, 63%, 64%);
+      }
+      
+      .Professional .learn-more:hover {
+        border: none;
+        transform: scale(1.1);
+      }
+      .Professional .description{
+          color: #fff;
+          line-height: 1.5rem;
+      }
+  
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 30px;
+        text-transform: uppercase;
+      }
+      .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+      @media only screen and (max-width: 1050px) {
+        .card-container {
+            
+          min-width: 10rem;
+        }
+      }
+      
+      @media only screen and (max-width: 700px) {
+        .cards-container {
+            display: flex;
+          flex-direction: column;
+        }
+        .card-container {
+          min-width: 60%;
+          border-radius: 10px
+        }
+        .master {
+          margin-top: 30px;
+        }
+        .Professional {
+          padding-top: 38px;
+          padding-bottom: 30px;
+          margin-top: 30px;
+        }
+      }
+      
